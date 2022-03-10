@@ -9,18 +9,31 @@
 </head>
 <body>
     <div id="root">
+        <label for=""> MESSAGE 1</label>
         <input v-model="message" type="text">
-        <div>{{ message }}</div> 
-        <div>  {{message2}}</div>
+        <div>{{message}}</div>
+        
+        
+        <label for=""> MESSAGE 2</label>
         <input v-model="message2" type="text">
+        <div v-model="message2" :class="classList.class1" > {{message2}}</div>
+
+        <img :src="srcImg" alt="">
+
+
+        <!-- <div :> {{`Ciao io sono il primo messaggio:${message},
+            io invece sono il secondo messaggio: ${message2}`}}
+        </div> -->
 
         <h1 :class="classList.class2">Ciao Mondo!</h1>
-         
-          
+
+        <button @click ="btnTest1">Push me</button>
+        <button @click ="btnTest2">Push me</button>
+
+
 
 
     </div>
-    
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <script src="script/script.js"></script>
 </body>
