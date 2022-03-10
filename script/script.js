@@ -36,15 +36,19 @@ Aggiungere alla pagina un’immagine, presa anch’essa da un data.*/
 arrString = ['pippo', 'pluto','PAPERINO'];
 // console.log(arrString);
 
-for (i=0; i < arrString.length; i++) {
-   
-   for(n=arrString[i]; n<arrString.length; n++){
-    arrString[i] =  arrString[i].toUpperCase;
-    // console.log(arrString)
-   }
+for (let i=0; i < arrString.length; i++) {
+//   console.log (arrString[i]);
+//   for(n=0; n < arrString[i].length; n++) {
+    arrString[i][0] = arrString[i][0].toUpperCase();
+    console.log(arrString[i][0]);
+    
+  
+//   }
+//   console.log (arrString);
     
 }
 console.log(arrString)
+// console.log(arrString)
 
 // arrSting.forEach((element, index) => {
 //     arrSting[index]= arrSting[0].toUpperCase();
