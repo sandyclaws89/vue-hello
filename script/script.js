@@ -13,6 +13,11 @@ Aggiungere alla pagina un’immagine, presa anch’essa da un data.*/
 const app = new Vue({
     el: '#root',
     data: {
-      message: 'Hello Vue!'
+      message: '',
+      message2: '',
+      classList: {
+          class1: "yellow",
+          class2: "bckBlue",
+      } 
     }
   })
